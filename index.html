@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+</head>
+<body>
+    <nav>
+        <p class="navBigTxt whiteTxt">집꾸미기</p>
+        <p class="navSmallTxt whiteTxt">Home</p>
+        <p class="navSmallTxt">스토어</p>
+        <p class="navSmallTxt">시공견적</p>
+    </nav>
+    <main>
+        <div>
+            <input class="search" type="text" placeholder="검색어입력">
+        </div>
+        <div class="productDiv">
+
+        </div>
+        <div class="shoppingBag">
+            <span class="shoppingBag__title bold">장바구니</span>
+            <div class="shoppingBag__list">
+                
+            </div>
+        </div>
+        <div class="priceDiv">
+            <span class="priceDiv__title bold">최종가격</span>
+            <span class="totalprice"></span>
+            <input class="buy button" type="button" value="구매하기">
+        </div>
+    </main>
+    <div class="modal">
+        <div class="modal__body">
+            <span class="modal__name bold">성함</span>
+            <input type="text" class="modal__nameInput">
+            <span class="modal__phone bold">연락처</span>
+            <input type="text" class="modal__phoneInput">
+            <input type="button" class="done button" value="입력완료">
+            <input type="button" class="close button" value="닫기">
+        </div>
+    </div>
+    <div class="receipt">
+        <div class="receipt__nav">
+            <input type="button" class="receipt__x" value="X">
+        </div>
+        <canvas id="myCanvas" class="receipt__canvas"></canvas>
+        <div class="receipt__footer">
+            <input type="button" class="receipt__close" value="닫기">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="store.json"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
