@@ -215,7 +215,7 @@ done.addEventListener('click', () => {
     receipt.style.display = 'block';
 
     let date = new Date();
-    const now = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+    const now = `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
     canvas.font = "bold 9px '맑은 고딕";
     canvas.reset();
     canvas.beginPath();
